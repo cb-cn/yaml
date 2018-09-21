@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script src="esprima.js"></script>
+<script src="js-yaml.min.js"></script>
+<script type="text/javascript">
+  var input = 'firstName: hello\nlastName: world';
+  var doc = jsyaml.load(input);
+  document.write("输入：" + input)
+  document.write("<br><br>输出：" + JSON.stringify(doc))
+</script>
+</body>
+</html>
